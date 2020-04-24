@@ -100,16 +100,24 @@ const writeListToFile = async (city, data) => {
 
 const main = async () => {
   const browser = await puppeteer.launch({headless: false});
-  writeListToFile('Mumbai', await getList(browser, 'https://www.justdial.com/Mumbai/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Pune', await getList(browser, 'https://www.justdial.com/Pune/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Delhi', await getList(browser, 'https://www.justdial.com/Delhi/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Bangalore', await getList(browser, 'https://www.justdial.com/Bangalore/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Hyderabad', await getList(browser, 'https://www.justdial.com/Hyderabad/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Chennai', await getList(browser, 'https://www.justdial.com/Chennai/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Ahmedabad', await getList(browser, 'https://www.justdial.com/Ahmedabad/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Kolkata', await getList(browser, 'https://www.justdial.com/Kolkata/Career-Counselling-Centres/', 1, 1));
-  writeListToFile('Jaipur', await getList(browser, 'https://www.justdial.com/Jaipur/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Mumbai', await getList(browser, 'https://www.justdial.com/Mumbai/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Pune', await getList(browser, 'https://www.justdial.com/Pune/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Delhi', await getList(browser, 'https://www.justdial.com/Delhi/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Bangalore', await getList(browser, 'https://www.justdial.com/Bangalore/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Hyderabad', await getList(browser, 'https://www.justdial.com/Hyderabad/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Chennai', await getList(browser, 'https://www.justdial.com/Chennai/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Ahmedabad', await getList(browser, 'https://www.justdial.com/Ahmedabad/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Kolkata', await getList(browser, 'https://www.justdial.com/Kolkata/Career-Counselling-Centres/', 1, 1));
+  // writeListToFile('Jaipur', await getList(browser, 'https://www.justdial.com/Jaipur/Career-Counselling-Centres/', 1, 1));
+
+
+  // writeListToFile('Mumbai-Eduboard', await getList(browser, 'https://www.justdial.com/Mumbai/Overseas-Education-Consultants/nct-11365029/', 1, 1));
+  // writeListToFile('Nariman-Point', await getList(browser, 'https://www.justdial.com/Mumbai/Overseas-Education-Consultants-in-Nariman-Point/nct-10958378', 1, 1));
+  // writeListToFile('Nariman-Point', await getList(browser, 'https://www.justdial.com/Mumbai/Overseas-Education-Consultants-in-Nariman-Point/nct-10958378/page-2', 1, 1));
+
+  
   // console.log(list)
+  
   console.log('----done----');
   browser.close();
 }
